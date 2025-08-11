@@ -1,0 +1,25 @@
+
+.caja {
+  background-color: #666;
+  color: black;
+  text-align: center;
+  border: 5px solid #bdbdbd;
+  box-sizing: border-box;
+}
+.top {
+  height: 80px;
+  margin-bottom: 10px;
+}
+.medio {
+  display: flex;
+  gap: 10px;
+}
+.izquierda, .derecha {
+  width: 150px;
+}
+.centro {
+  flex: 1;
+}
+.izquierda, .centro, .derecha {
+  height: 800px;
+}
