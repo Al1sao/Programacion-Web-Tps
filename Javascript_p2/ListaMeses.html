@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 7 - Bucles</title>
+</head>
+<body>
+  <h1>Meses con distintos bucles</h1>
+  <h3>for</h3>
+  <ul id="listaFor"></ul>
+  <h3>while</h3>
+  <ul id="listaWhile"></ul>
+  <h3>do while</h3>
+  <ul id="listaDoWhile"></ul>
+  <h3>for in</h3>
+  <ul id="listaForIn"></ul>
+
+  <script>
+    let meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
+    function mostrarFor()
+    {
+      let lista = document.getElementById("listaFor")
+      for(let i=0;i<meses.length;i++){
+        lista.innerHTML += "<li>"+meses[i]+"</li>"
+    }
+    }
+    function mostrarWhile()
+    {
+      let lista = document.getElementById("listaWhile")
+      let i=0
+      while(i<meses.length)
+    {
+        lista.innerHTML += "<li>"+meses[i]+"</li>"
+        i++
+    }
+    }
+    function mostrarDoWhile()
+    {
+      let lista = document.getElementById("listaDoWhile")
+      let i=0
+      do
+    {
+        lista.innerHTML += "<li>"+meses[i]+"</li>"
+        i++
+    }while(i<meses.length)
+    }
+    function mostrarForIn()
+    {
+      let lista = document.getElementById("listaForIn")
+      for(let i in meses){
+        lista.innerHTML += "<li>"+meses[i]+"</li>"
+    }
+    }
+    window.onload = function()
+    {
+      mostrarFor()
+      mostrarWhile()
+      mostrarDoWhile()
+      mostrarForIn()
+    }
+  </script>
+</body>
+</html>
