@@ -1,12 +1,11 @@
 let ahora = new Date( )    
 
-document.getElementById("fecha").innerHTML = 
-   "Hoy es: "+ahora.toLocaleString()  
+document.getElementById("fecha").innerHTML= "Hoy es: "+ahora.toLocaleString()  
 
-let navidad = new Date(ahora.getFullYear(), 11, 25)  
+let navidad = new Date(ahora.getFullYear(),11,25)  
 
 if(ahora > navidad){
-   navidad.setFullYear( navidad.getFullYear()+1 ) 
+   navidad.setFullYear(navidad.getFullYear()+1) 
 }
 let diff = navidad - ahora
 let dias = Math.floor(diff / (1000*60*60*24))
@@ -19,4 +18,5 @@ function calcularEdad( ) {
    let anio = document.getElementById("anio").value
    let edad = ahora.getFullYear() - anio
    document.getElementById("edad").innerHTML = "Su edad es " + edad
+
 }
