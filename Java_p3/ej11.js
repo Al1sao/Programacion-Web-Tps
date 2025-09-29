@@ -1,6 +1,6 @@
 
 function enviarMensaje(e){
-   e.preventDefault()    // no recargar la pagina
+   e.preventDefault()   
    let user = document. getElementById("usuario"). value
    let msg  = document .getElementById("mensaje") .value
    let chat = document. getElementById("chat")
